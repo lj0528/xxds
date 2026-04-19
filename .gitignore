@@ -1,0 +1,22 @@
+# 后端忽略
+backend/target/
+backend/.idea/
+backend/*.iml
+backend/logs/
+backend/application-local.properties
+
+# 前端忽略
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.vite/
+
+# IDE 忽略（全局）
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# 操作系统
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+package com.linalg.linear_algebra_assistant.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.linalg.linear_algebra_assistant.entity.User;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+
+@Mapper
+public interface UserMapper extends BaseMapper<User> {
+    @Select("SELECT * FROM user WHERE username = #{username}")
+    User selectByUsername(@Param("username") String username);
+}
